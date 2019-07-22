@@ -1,0 +1,14 @@
+.header{
+    border: solid 1px black;
+}
+
+.menu__ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.funyons {
+    text-align:  center;
+}
