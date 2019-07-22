@@ -15,13 +15,16 @@ const todoFetcher = () => {
 todoFetcher()
 
 const todoConverter = (todoObject) => {
+
+
     return `
     <section class="todo">
     <h1 class="todo__name">${todoObject.title}</h1>
-    <h2 class="todo__complete">${todoObject.completed}</h2>
+    <h2 class="todo__complete"><input type="checkbox" name="Done"${todoObject.completed ? "checked" : " " }>Done</h2>
     </section>
     `
-}
+    }
+
 
 const displayTodoInDOM = (todoHTMLRep) => {
     placingTodos.innerHTML += todoHTMLRep
