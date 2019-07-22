@@ -2,13 +2,36 @@
     border: solid 1px black;
 }
 
+body{
+    background-color: #9ACD65;
+    color: #FFF200;
+    font-family: 'Shadows Into Light Two', cursive;
+    
+    
+}
+
+.funyons:hover {
+    color: #EE1E2F;
+}
+
 .menu__ul {
+    
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+   
 }
 
 .funyons {
     text-align:  center;
 }
+
+.todo{
+    border: 1px solid black;
+    flex-basis: 28%;
+    padding: 10px;
+    margin: 1em;
+    background-color: #005941;
+}
+
