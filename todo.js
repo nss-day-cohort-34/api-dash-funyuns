@@ -5,7 +5,8 @@ const todoFetcher = () => {
         .then(todos => todos.json())
         .then(arrayOfTodos => {
             for (const todo of arrayOfTodos) {
-                if(todo.id < 30) { const convertedTodo = todoConverter(todo)
+                if(todo.id <= 30) { 
+                const convertedTodo = todoConverter(todo)
                 displayTodoInDOM(convertedTodo)}
             }
         })
